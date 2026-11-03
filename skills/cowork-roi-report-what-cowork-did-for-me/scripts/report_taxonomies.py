@@ -1,0 +1,137 @@
+"""Bundled process, role and skill reference data; no JSON companion files."""
+
+PROCESS_TAXONOMY = [
+    {
+        "id": "1.0", "label": "Strategy & Planning",
+        "value_pillar": "Transformation", "pillar_css": "trans",
+        "description": "business strategy vision mission OKR objectives goals roadmap prioritization planning annual plan operating plan business case competitive analysis go-to-market GTM market sizing scenario planning growth strategy long-term plan strategic initiative",
+    },
+    {
+        "id": "2.0", "label": "Product & Service Development",
+        "value_pillar": "Transformation", "pillar_css": "trans",
+        "description": "product management feature development product roadmap prototype MVP user research requirements specifications product design innovation product launch release backlog sprint product market fit product brief",
+    },
+    {
+        "id": "3.0", "label": "Sales & Customer Engagement",
+        "value_pillar": "Revenue Growth", "pillar_css": "rev",
+        "description": "sales business development customer acquisition proposal value proposition pitch deck presentation slides executive briefing deck partner deck customer deck RFP RFI pricing quote deal contract account management demo customer meeting win loss discovery",
+    },
+    {
+        "id": "4.0", "label": "Service Delivery & Operations",
+        "value_pillar": "Cost Reduction", "pillar_css": "cost",
+        "description": "service delivery operations fulfillment implementation deployment production support incident SLA logistics supply chain project execution delivery management operational review runbook",
+    },
+    {
+        "id": "5.0", "label": "Customer Success & Support",
+        "value_pillar": "Revenue Growth", "pillar_css": "rev",
+        "description": "customer success onboarding adoption renewal retention churn escalation customer satisfaction NPS CSAT account health customer journey support ticket health score engagement plan",
+    },
+    {
+        "id": "6.0", "label": "People & Talent Management",
+        "value_pillar": "Transformation", "pillar_css": "trans",
+        "description": "human capital workforce talent acquisition hiring recruiting performance review annual review connect review year end review fy review fiscal year summary team contribution contributions summary contributions deck team deck performance deck headcount org design compensation promotion succession planning employee development training skills assessment",
+    },
+    {
+        "id": "7.0", "label": "Technology & Engineering",
+        "value_pillar": "Transformation", "pillar_css": "trans",
+        "description": "software engineering code coding script scripting automation API database infrastructure cloud security integration data pipeline architecture debug debugging refactor deploy deployment application development IT build developer",
+    },
+    {
+        "id": "8.0", "label": "Finance & Business Value",
+        "value_pillar": "Cost Reduction", "pillar_css": "cost",
+        "description": "financial planning budget budgeting cost ROI return on investment business value revenue expense spend forecast financial analysis margin profitability financial model FinOps value assessment savings impact cost reduction economics business impact quantify",
+    },
+    {
+        "id": "9.0", "label": "Procurement & Vendor Management",
+        "value_pillar": "Cost Reduction", "pillar_css": "cost",
+        "description": "procurement vendor selection asset management facilities capital expenditure equipment licensing supplier contract sourcing purchasing negotiation",
+    },
+    {
+        "id": "10.0", "label": "Risk, Compliance & Governance",
+        "value_pillar": "Risk Mitigation", "pillar_css": "risk",
+        "description": "risk management compliance governance audit regulatory policy ethics privacy data protection security controls legal risk assessment framework standards",
+    },
+    {
+        "id": "11.0", "label": "Stakeholder & External Relations",
+        "value_pillar": "Transformation", "pillar_css": "trans",
+        "description": "partner alliance ecosystem stakeholder communication executive update leadership briefing external briefing industry analyst vendor community public relations announcement memo cross-functional",
+    },
+    {
+        "id": "12.0", "label": "Capability & Skill Development",
+        "value_pillar": "Transformation", "pillar_css": "trans",
+        "description": "capability skill development learning best practices playbook methodology change management transformation training materials knowledge base framework guide tutorial implementation guide skill packaging workflow automation tool building",
+    },
+    {
+        "id": "13.0", "label": "Analytics, Insights & Reporting",
+        "value_pillar": "Transformation", "pillar_css": "trans",
+        "description": "research data analysis analytics insight benchmark business intelligence reporting metrics KPI dashboard visualization chart charts graph findings synthesis investigation trend measurement activity report impact report usage analysis scorecard summary weekly biweekly newsletter wrapped review digest report deck",
+    },
+]
+
+ROLE_TAXONOMY = {
+    "_note": "Professional-role taxonomy ported from microsoft/What-I-Did-Copilot (prompts/role_classification.txt). PRIMARY path: the harvest LLM names the 1-2 roles a billing firm would charge for each session (free to use exact roles beyond this list). FALLBACK: keyword match below when a session has no professional_roles.",
+    "roles": [
+        {"role": "QA Engineer", "keywords": ["debug", "fix", "error", "bug", "crash", "broken", "test", "qa"]},
+        {"role": "UX Designer", "keywords": ["ux", "wireframe", "flow", "prototype", "mockup"]},
+        {"role": "Frontend Developer", "keywords": [".html", ".css", "visual", "layout", "style", "component", "frontend"]},
+        {"role": "Software Engineer", "keywords": [".py", "python", "code", "implement", "build", "function", "module", "script"]},
+        {"role": "Data Analyst", "keywords": ["sql", "query", "dashboard", "kpi", "dataset", "dataframe", "pivot", "bi report", "power bi", "analytics", "analysis"]},
+        {"role": "Data Engineer", "keywords": ["pipeline", "etl", "schema", "warehouse", "dbt"]},
+        {"role": "Technical Writer", "keywords": ["document", "readme", "how-to", "guide", "explainer", "documentation"]},
+        {"role": "DevOps Engineer", "keywords": ["deploy", "dockerfile", "kubernetes", "terraform", "ci/cd", "github action"]},
+        {"role": "Solutions Architect", "keywords": ["architect", "api design", "integration design", "architecture"]},
+        {"role": "Product Manager", "keywords": ["roadmap", "user story", "prioritize", "backlog", "product requirement"]},
+        {"role": "Program Manager", "keywords": ["project plan", "milestone", "delivery", "dependency", "status report", "program"]},
+        {"role": "Business Analyst", "keywords": ["process map", "gap analysis", "workflow", "business requirement", "stakeholder interview"]},
+        {"role": "Management Consultant", "keywords": ["strategy", "recommendation", "framework", "benchmark", "executive", "consulting", "value story", "narrative"]},
+        {"role": "Financial Analyst", "keywords": ["financial model", "valuation", "forecast", "portfolio", "backtest", "alpha", "pnl", "quant", "chargeback", "cost"]},
+        {"role": "Risk & Compliance Analyst", "keywords": ["compliance", "regulation", "audit", "risk assessment", "kyc", "aml", "regulatory"]},
+        {"role": "Research Scientist", "keywords": ["experiment", "hypothesis", "literature", "simulation", "scientific", "research paper"]},
+    ],
+    "default": "Knowledge Worker",
+}
+
+SKILL_VOCABULARY = {
+    "_source": "Borrowed from microsoft/What-I-Did-Copilot (analyze.py: DOMAIN_SKILLS + TECH_SKILLS).",
+    "_method": "That tool sends a per-session transcript to an LLM (gpt-4o-mini) which semantically tags which of these fixed skills were exercised. In Cowork the in-loop agent performs the same semantic tagging from this controlled vocabulary \u2014 no external API. The vocabulary constrains output; the model supplies the judgment. Tag conservatively, evidence-based, never invent skills not in this list.",
+    "_provenance": "domain_skills[0..14] and tech_skills[0..10] are VERBATIM from the repo. Entries with \"verbatim\": false complete the tails GitHub's rendering truncated and round the set out to the tool's stated ~20+ roles; replace them if you obtain the exact source list.",
+    "domain_skills": [
+        {"name": "System Architecture", "verbatim": True},
+        {"name": "Product Planning", "verbatim": True},
+        {"name": "Requirements Analysis", "verbatim": True},
+        {"name": "Technical Research", "verbatim": True},
+        {"name": "Data Analysis", "verbatim": True},
+        {"name": "Statistical Modelling", "verbatim": True},
+        {"name": "UX Design", "verbatim": True},
+        {"name": "Product Management", "verbatim": True},
+        {"name": "Project Management", "verbatim": True},
+        {"name": "Technical Writing", "verbatim": True},
+        {"name": "Documentation", "verbatim": True},
+        {"name": "Stakeholder Communication", "verbatim": True},
+        {"name": "Prompt Engineering", "verbatim": True},
+        {"name": "Security Review", "verbatim": True},
+        {"name": "Code Review", "verbatim": True},
+        {"name": "Business Analysis", "verbatim": False},
+        {"name": "Financial Modelling", "verbatim": False},
+        {"name": "Presentation Design", "verbatim": False},
+        {"name": "Marketing & Content Strategy", "verbatim": False},
+        {"name": "Process Automation", "verbatim": False},
+    ],
+    "tech_skills": [
+        {"name": "Python", "verbatim": True},
+        {"name": "JavaScript", "verbatim": True},
+        {"name": "TypeScript", "verbatim": True},
+        {"name": "Bash/Shell", "verbatim": True},
+        {"name": "Cloud Infrastructure", "verbatim": True},
+        {"name": "Database Design", "verbatim": True},
+        {"name": "Machine Learning", "verbatim": True},
+        {"name": "Data Engineering", "verbatim": True},
+        {"name": "Debugging", "verbatim": True},
+        {"name": "Refactoring", "verbatim": True},
+        {"name": "Frontend Development", "verbatim": True},
+        {"name": "Backend Development", "verbatim": False},
+        {"name": "API Design", "verbatim": False},
+        {"name": "Data Visualization", "verbatim": False},
+        {"name": "Testing & QA", "verbatim": False},
+    ],
+}

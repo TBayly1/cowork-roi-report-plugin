@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.28",
+  "version": "1.0.0",
+  "id": "e3b01adb-814b-4aee-b809-45af797f7eb9",
+  "developer": {
+    "name": "TBayly1",
+    "websiteUrl": "https://github.com/TBayly1/cowork-roi-report-plugin",
+    "privacyUrl": "https://github.com/TBayly1/cowork-roi-report-plugin/blob/main/PRIVACY.md",
+    "termsOfUseUrl": "https://github.com/TBayly1/cowork-roi-report-plugin/blob/main/TERMS.md"
+  },
+  "name": {
+    "short": "What Cowork Did For Me",
+    "full": "Cowork ROI Report - What Cowork Did For Me"
+  },
+  "description": {
+    "short": "Generate a personal Cowork impact report from your OneDrive artifacts.",
+    "full": "Generates a personal HTML impact report from the signed-in user's accessible Copilot Cowork artifacts in OneDrive, including modeled time savings, professional-services-equivalent value, work categories, projects, and skills. Estimates are not audited measurements or billing records. Optional telemetry depends on the runtime data available. Recurring reports and email delivery require user approval."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#2563EB",
+  "agentSkills": [
+    {
+      "folder": "skills/cowork-roi-report-what-cowork-did-for-me"
+    }
+  ]
+}
