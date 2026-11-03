@@ -3,7 +3,7 @@
 ## What I Did — GitHub Copilot Impact Report
 
 The role and professional-skill taxonomy data in
-`skills/cowork-roi-report-what-cowork-did-for-me/scripts/report_taxonomies.py`
+`cowork-roi-report-what-cowork-did-for-me-plugin/scripts/report_taxonomies.py`
 is adapted in part from
 [microsoft/What-I-Did-Copilot](https://github.com/microsoft/What-I-Did-Copilot).
 
