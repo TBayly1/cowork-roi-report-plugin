@@ -6,8 +6,8 @@
   "developer": {
     "name": "TBayly1",
     "websiteUrl": "https://github.com/TBayly1/cowork-roi-report-plugin",
-    "privacyUrl": "https://github.com/TBayly1/cowork-roi-report-plugin/blob/main/PRIVACY.md",
-    "termsOfUseUrl": "https://github.com/TBayly1/cowork-roi-report-plugin/blob/main/TERMS.md"
+    "privacyUrl": "https://github.com/TBayly1/cowork-roi-report-plugin/blob/main/cowork-roi-report-what-cowork-did-for-me-plugin/PRIVACY.md",
+    "termsOfUseUrl": "https://github.com/TBayly1/cowork-roi-report-plugin/blob/main/cowork-roi-report-what-cowork-did-for-me-plugin/TERMS.md"
   },
   "name": {
     "short": "What Cowork Did For Me",
@@ -24,7 +24,7 @@
   "accentColor": "#2563EB",
   "agentSkills": [
     {
-      "folder": "cowork-roi-report-what-cowork-did-for-me-plugin"
+      "folder": "cowork-roi-report-what-cowork-did-for-me"
     }
   ]
 }

@@ -32,7 +32,7 @@ Licensed under the MIT License:
 ## What I Did — GitHub Copilot Impact Report
 
 The role and professional-skill taxonomy data in
-`cowork-roi-report-what-cowork-did-for-me-plugin/scripts/report_taxonomies.py`
+`cowork-roi-report-what-cowork-did-for-me/scripts/report_taxonomies.py`
 is also adapted in part from
 [microsoft/What-I-Did-Copilot](https://github.com/microsoft/What-I-Did-Copilot).
 That project is licensed under the MIT License.
