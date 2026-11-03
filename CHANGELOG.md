@@ -4,7 +4,7 @@ Notable changes to Cowork ROI Report - What Cowork Did For Me are recorded here.
 
 ## 1.0.0
 
-Initial plugin release, adapted from **What Cowork Did For Me v48**.
+Initial plugin release, adapted from **[Microsoft's What I Did with Cowork](https://github.com/microsoft/What-I-Did-with-Cowork) v48**.
 
 - Added an Excel export for Power BI reporting. The bundled
   `to_xlsx.py` script converts the report payload into four structured
