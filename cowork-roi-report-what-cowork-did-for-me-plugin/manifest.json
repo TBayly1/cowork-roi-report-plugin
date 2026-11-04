@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.28/MicrosoftTeams.schema.json",
   "manifestVersion": "1.28",
   "version": "1.0.0",
-  "id": "e3b01adb-814b-4aee-b809-45af797f7eb9",
+  "id": "f4b01adb-814b-4aee-b809-45af797f7eb9",
   "developer": {
     "name": "TBayly1",
     "websiteUrl": "https://github.com/TBayly1/cowork-roi-report-plugin",
