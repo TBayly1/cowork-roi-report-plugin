@@ -4,6 +4,21 @@ This repository contains the Cowork plugin package and a Power BI report
 template. Use the two processes below to install the skill and load its
 generated reporting data into Power BI.
 
+## Purpose and trial context
+
+This tool is intended to support Cowork trials by helping organizations
+understand how Cowork is being used and what value it may provide. A useful
+trial gives end users a way to share their experiences and learnings so the
+organization can understand practical use cases and potential value before
+considering a wider rollout.
+
+The report is designed to help users share a summary of their own Cowork
+activity with trial or initiative owners. Sharing is not automatic: users
+should know what information the report contains and choose whether to share
+it. Organizations are responsible for explaining the trial's reporting
+approach and ensuring collection and sharing follow their privacy, security,
+employment, and records-management policies.
+
 ## Process 1: Install the plugin
 
 1. Download the [Cowork ROI Report Plugin Template v1.0.0 ZIP](Cowork%20ROI%20Report%20Plugin%20Template%20v1.0.0.zip).
